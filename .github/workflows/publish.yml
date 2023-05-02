@@ -81,7 +81,7 @@ jobs:
         if: steps.release-exists.outputs.result == 'false'
 
       - name: Create Application Installer for Release
-        env:
+        # env:
           # CSC_IDENTITY_AUTO_DISCOVERY: true
           # CSC_FOR_PULL_REQUEST: true
           # APPLEID: ${{ secrets.APPLEID }}
